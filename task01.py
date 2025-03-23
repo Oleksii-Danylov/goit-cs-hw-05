@@ -32,9 +32,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Sort files by extensions asynchronously.")
     parser.add_argument("source", type=str, help="Source folder")
     parser.add_argument("output", type=str, help="Output folder")
-
     args = parser.parse_args()
-
     source = AsyncPath(args.source)
     output = AsyncPath(args.output)
 
